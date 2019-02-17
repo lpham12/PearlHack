@@ -11,7 +11,7 @@
       </head>
 
 <body>
-    <header class="header">
+    <header class="header">/
         <nav class="navbar navbar-style">
             <div class="container">
                 <div class="navbar-header">
@@ -28,79 +28,91 @@
         </nav>
     </header>
     <!--body starts here-->
-    <form action="/action_page.php">
+    <form action="/quiz.html">
+  <!--  not needed but might still put it in
   First name:<br>
   <input type="text" name="firstname" value="firstname">
   <br>
   Last name:<br>
   <input type="text" name="lastname" value="lastname">
   <br>
-  Choose 4 traits/skills that best describe you academically:<br>
-  <select multiple>
-    <option value="analytic">analytical</option>
-    <option value="detailed">detailed</option>
-    <option value="timely">good time management</option>
-    <option value="pressure">works well under pressure</option>
-    <option value="analytic">quick to learn</option>
-    <option value="creative">thinks outside the box</option>
-    <option value="initiatative">shows initiave with work</option>
-    <option value="builder">builder/hands on solutions</option>
-  </select>
-  <br>
-  choose 4 traits that best describe your personality:<br>
-  <select multiple>
-    <option value="creative">creative</option>
-    <option value="detailed">invokes inspiration</option>
-    <option value="passionate">passionate</option>
-    <option value="compassionate">compassionate</option>
-    <option value="dependable">dependable</option>
-    <option value="empathetic">empathetic</option>
-    <option value="trustworthy">trustworthy</option>
-    <option value="Observant">Observant</option>
-  </select>
-  <br>
-  choose the soft skills that you have:<br>
-  <select multiple>
-    <option value="write">Technical writing skills</option>
-    <option value="team">team player</option>
-    <option value="communication">communication</option>
-    <option value="delegate">delegation skills</option>
-    <option value="innovative">innovative</option>
-    <option value="timely">good time management</option>
-    <option value="patient">patient</option>
-  </select>
-  <br>
-  what is your level of education?
-  <input type="radio" name="edu" value="hs">In high school<br>
-  <input type="radio" name="edu" value="hsg">High school or GED<br>
-  <input type="radio" name="edu" value="jc">Junior college<br>
-  <input type="radio" name="edu" value="ug">Undergrad
-  <br>
-  What is your age? <br>
+-->
+<h2 style="color: #ff3385;">Matchy Matchy Quiz</h2>
+<p>Take the Matchy Matchy quiz to exolore the different career choices in Computer Science that might be right for you! Computer Science requires people of all background to make quality software, creative people to come up with new solutions, artsy people to help make design more pleasant, and much more.<p>
 
-  <p style="color: red;">*at the moment we only serve young adults 18-25 years of age. Sorry for any inconvenience<p>
+<form action="/action_page.php">
+What is your gender?<br>
+<input type="radio" name="gender" value="male" checked>Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+<input type="radio" name="gender" value="nonbi">Non-binary<br>
+<input type="radio" name="gender" value="other"> Other
+<br><br>
+Choose 4 traits/skills that best describe you academically:<br>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" value="analytic" class="custom-control-input">analytical</option><br>
+  <input type="checkbox" value="detailed" class="custom-control-input">detailed</option><br>
+  <input type="checkbox" value="timely" class="custom-control-input">good time management</option><br>
+  <input type="checkbox" value="pressure" class="custom-control-input">works well under pressure</option><br>
+  <input type="checkbox" value="analytic" class="custom-control-input">quick to learn</option><br>
+  <input type="checkbox" value="creative" class="custom-control-input">thinks outside the box</option><br>
+  <input type="checkbox" value="initiatative" class="custom-control-input">shows initiave with work</option><br>
+  <input type="checkbox" value="builder" class="custom-control-input">builder/hands on solutions</option><br>
+</div>
+<br><br>
+Choose 4 traits that best describe your personality:<br>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" value="creative" class="custom-control-input">creative</option><br>
+  <input type="checkbox" value="detailed" class="custom-control-input">invokes inspiration</option><br>
+  <input type="checkbox" value="passionate" class="custom-control-input">passionate</option><br>
+  <input type="checkbox" value="compassionate" class="custom-control-input">compassionate</option>
+  <input type="checkbox" value="dependable" class="custom-control-input">dependable</option><br>
+  <input type="checkbox" value="empathetic" class="custom-control-input">empathetic</option><br>
+  <input type="checkbox" value="trustworthy" class="custom-control-input">trustworthy</option><br>
+  <input type="checkbox" value="Observant" class="custom-control-input">Observant</option><br>
+</div>
+<br><br>
+Choose the soft skills that you have:<br>
+<div class="custom-control custom-checkbox">
+  <input type="checkbox" value="write">Technical writing skills</option><br>
+  <input type="checkbox" value="team">team player</option><br>
+  <input type="checkbox" value="communication">communication</option><br>
+  <input type="checkbox" value="delegate">delegation skills</option><br>
+  <input type="checkbox" value="innovative">innovative</option><br>
+  <input type="checkbox" value="timely">good time management</option><br>
+  <input type="checkbox" value="patient">patient</option><br>
+</div>
+<br><br>
+What is your level of education?<br>
+<input type="radio" name="edu" value="hs">In high school<br>
+<input type="radio" name="edu" value="hsg">High school or GED<br>
+<input type="radio" name="edu" value="jc">Junior college<br>
+<input type="radio" name="edu" value="ug">Undergrad
+<br><br>
+What is your age? <br>
 
-  <input type="number" name="age" min="18" max="25">
+<input type="number" name="age" min="16" max="26" size="2" width="">
+<br><br>
+What is your yearly income?<br>
+<input type="radio" name="income" value="10">10k or less<br>
+<input type="radio" name="income" value="20">10k-20k<br>
+<input type="radio" name="income" value="30">20-30K<br>
+<input type="radio" name="income" value="00">more than 30k
+<br><br>
+What is your ocupation?<br>
+<input type="radio" name="income" value="fullstu">Full-time student<br>
+<input type="radio" name="income" value="pjobstu">Student with part-time job<br>
+<input type="radio" name="income" value="fjobstu">Student with full-time job<br>
+<input type="radio" name="income" value="partstu">part time student
+<br><br>
 
-  What is your yearly income?
-  <input type="radio" name="income" value="10">10k or less<br>
-  <input type="radio" name="income" value="20">10k-20k<br>
-  <input type="radio" name="income" value="30">20-30K<br>
-  <input type="radio" name="income" value="00">more than 30k
-  <br>
-  What is your ocupation?
-  <input type="radio" name="income" value="fullstu">Full-time student<br>
-  <input type="radio" name="income" value="pjobstu">Student with part-time job<br>
-  <input type="radio" name="income" value="fjobstu">Student with full-time job<br>
-  <input type="radio" name="income" value="partstu">part time student
-  <br>
-  What is your gender?
-  <input type="radio" name="gender" value="male" checked>Male<br>
-  <input type="radio" name="gender" value="female">Female<br>
-  <input type="radio" name="gender" value="nonbi">Non-binary<br>
-  <input type="radio" name="gender" value="other"> Other
-  <br>
+What is your gender?<br>
+<input type="radio" name="gender" value="male" checked>Male<br>
+<input type="radio" name="gender" value="female">Female<br>
+<input type="radio" name="gender" value="nonbi">Non-binary<br>
+<input type="radio" name="gender" value="other"> Other
+<br><br>
   //end
+
   <input type="submit" value="Submit">
 </form>
 
