@@ -2,4 +2,9 @@
    "projects": {
      "default": "pearlhack-6998a"
    }
+    "rules": {
+    ".read": true,
+    ".write": true
+  }
 }   
+
