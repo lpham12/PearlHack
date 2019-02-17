@@ -18,16 +18,94 @@
                     <a href=""><img class="logo" src="style/logo.png" </a>
                 </div>
                 <ul class ="nav navbar-nav navbar-right">
-                   
+
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href = "quiz.html"> Quiz</a></li>
                     <li><a href = "resources.html"> Resources</a></li>
                     <li><a href = "profile.html"> Profile</a></li>
                 </ul>
             </div>
-
         </nav>
     </header>
+    <!--body starts here-->
+    <form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="lastname">
+  <br>
+  Choose 4 traits/skills that best describe you academically:<br>
+  <select multiple>
+    <option value="analytic">analytical</option>
+    <option value="detailed">detailed</option>
+    <option value="timely">good time management</option>
+    <option value="pressure">works well under pressure</option>
+    <option value="analytic">quick to learn</option>
+    <option value="creative">thinks outside the box</option>
+    <option value="initiatative">shows initiave with work</option>
+    <option value="builder">builder/hands on solutions</option>
+  </select>
+  <br>
+  choose 4 traits that best describe your personality:<br>
+  <select multiple>
+    <option value="creative">creative</option>
+    <option value="detailed">invokes inspiration</option>
+    <option value="passionate">passionate</option>
+    <option value="compassionate">compassionate</option>
+    <option value="dependable">dependable</option>
+    <option value="empathetic">empathetic</option>
+    <option value="trustworthy">trustworthy</option>
+    <option value="Observant">Observant</option>
+  </select>
+  <br>
+  choose the soft skills that you have:<br>
+  <select multiple>
+    <option value="write">Technical writing skills</option>
+    <option value="team">team player</option>
+    <option value="communication">communication</option>
+    <option value="delegate">delegation skills</option>
+    <option value="innovative">innovative</option>
+    <option value="timely">good time management</option>
+    <option value="patient">patient</option>
+  </select>
+  <br>
+  what is your level of education?
+  <input type="radio" name="edu" value="hs">In high school<br>
+  <input type="radio" name="edu" value="hsg">High school or GED<br>
+  <input type="radio" name="edu" value="jc">Junior college<br>
+  <input type="radio" name="edu" value="ug">Undergrad
+  <br>
+  What is your age? <br>
+
+  <p style="color: red;">*at the moment we only serve young adults 18-25 years of age. Sorry for any inconvenience<p>
+
+  <input type="number" name="age" min="18" max="25">
+
+  What is your yearly income?
+  <input type="radio" name="income" value="10">10k or less<br>
+  <input type="radio" name="income" value="20">10k-20k<br>
+  <input type="radio" name="income" value="30">20-30K<br>
+  <input type="radio" name="income" value="00">more than 30k
+  <br>
+  What is your ocupation?
+  <input type="radio" name="income" value="fullstu">Full-time student<br>
+  <input type="radio" name="income" value="pjobstu">Student with part-time job<br>
+  <input type="radio" name="income" value="fjobstu">Student with full-time job<br>
+  <input type="radio" name="income" value="partstu">part time student
+  <br>
+  What is your gender?
+  <input type="radio" name="gender" value="male" checked>Male<br>
+  <input type="radio" name="gender" value="female">Female<br>
+  <input type="radio" name="gender" value="nonbi">Non-binary<br>
+  <input type="radio" name="gender" value="other"> Other
+  <br>
+  //end
+  <input type="submit" value="Submit">
+</form>
+
+
+
 </body>
 
 </html>
